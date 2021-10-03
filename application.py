@@ -19,7 +19,7 @@ from PIL import ImageDraw
 from PIL import ImageFont
 from PIL import ImageEnhance
 from pdf2image import convert_from_path, convert_from_bytes
-# from wand.image import Image as wimage
+from wand.image import Image as wimage
 from os.path import exists
 
 import ffmpeg
