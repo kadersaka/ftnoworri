@@ -1,31 +1,5 @@
-from flask import Flask, jsonify
+from flask import Flask
 from flask_restful import Resource, Api, reqparse, abort, fields, marshal_with
-from werkzeug.datastructures import FileStorage
-from werkzeug.utils import secure_filename
-
-import boto3
-import uuid
-import os
-from os import path
-from os import remove
-from botocore.client import Config
-
-from PIL import Image
-from io import BytesIO
-from PIL import ImageDraw
-from PIL import ImageFont
-from PIL import ImageEnhance
-from pdf2image import convert_from_path
-from wand.image import Image as wimage
-from os.path import exists
-
-from PyPDF2 import PdfFileReader
-
-import ffmpeg
-
-
-#AWS_ACCESS_KEY_ID = 'aws-access-key-id'
-#AWS_SECRET_ACCESS_KEY = 'aws-secret-access-key'
 
 ## app initilization
 application = Flask(__name__)
