@@ -13,16 +13,16 @@ import botocore
 from botocore.client import Config
 from botocore.exceptions import ClientError
 
-from PIL import Image
-from io import BytesIO
-from PIL import ImageDraw
-from PIL import ImageFont
-from PIL import ImageEnhance
-from pdf2image import convert_from_path, convert_from_bytes
-from wand.image import Image as wimage
-from os.path import exists
-
-from PyPDF2 import PdfFileReader, PdfFileWriter
+# from PIL import Image
+# from io import BytesIO
+# from PIL import ImageDraw
+# from PIL import ImageFont
+# from PIL import ImageEnhance
+# from pdf2image import convert_from_path, convert_from_bytes
+# from wand.image import Image as wimage
+# from os.path import exists
+#
+# from PyPDF2 import PdfFileReader, PdfFileWriter
 
 
 import ffmpeg
