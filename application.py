@@ -21,6 +21,7 @@ from PIL import ImageEnhance
 from pdf2image import convert_from_path, convert_from_bytes
 #from wand.image import Image as wimage
 from os.path import exists
+from PyPDF2 import PdfFileReader, PdfFileWriter
 
 import ffmpeg
 
@@ -35,7 +36,6 @@ AWS_DEFAULT_REGION = 'eu-central-1'
 AWS_BUCKET = 'trust-zone'
 AWS_UPLOAD_FOLDER = "secure_files/"
 UPLOAD_FOLDER = './uploads'
-
 
 class HelloWorld(Resource):
     @staticmethod
