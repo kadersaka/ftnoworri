@@ -23,7 +23,7 @@ from PyPDF2 import PdfFileReader
 
 import ffmpeg
 
-## config
+## configs
 AWS_ACCESS_KEY_ID = 'AKIA3YBCFTUL3D4VTRXO'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_DEFAULT_REGION = 'eu-central-1'
