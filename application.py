@@ -749,5 +749,11 @@ api.add_resource(HelloName, '/helloworld/<string:name>')
 api.add_resource(ToDo, '/todos/<int:todo_id>')
 api.add_resource(ToDoList, '/todos')
 
+api.add_resource(UploadSecureFile, '/upload_file')
+api.add_resource(CreateBucket, '/createbucket')
+api.add_resource(DownloadSecureFile, '/getfile')
+api.add_resource(UploadVideoFile, '/uploadvideo')
+api.add_resource(UploadImageFile, '/uploadimage')
+# api.add_resource(UploadPdfFile, '/noworriuploadpdf')
 if __name__ == '__main__':
     application.run(debug=False)
