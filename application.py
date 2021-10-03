@@ -8,7 +8,13 @@ application.config.from_object(__name__)
 api = Api(application)
 
 
-
+## configs
+AWS_ACCESS_KEY_ID = 'AKIA3YBCFTUL3D4VTRXO'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_DEFAULT_REGION = 'eu-central-1'
+AWS_BUCKET = 'trust-zone'
+AWS_UPLOAD_FOLDER = "secure_files/"
+UPLOAD_FOLDER ='./uploads'
 
 
 
