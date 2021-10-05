@@ -756,4 +756,4 @@ api.add_resource(UploadVideoFile, '/uploadvideo')
 api.add_resource(UploadImageFile, '/uploadimage')
 # api.add_resource(UploadPdfFile, '/noworriuploadpdf')
 if __name__ == '__main__':
-    application.run(host = '0.0.0.0', port = 8080)
+    application.run(host='0.0.0.0', port=8080)
