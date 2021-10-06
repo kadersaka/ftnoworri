@@ -25,17 +25,20 @@ from PyPDF2 import PdfFileReader, PdfFileWriter
 
 import ffmpeg
 
+#AWS_ACCESS_KEY_ID = 'AKIA3YBCFTUL3D4VTRXO'
+AWS_ACCESS_KEY_ID = 'AKIA3YBCFTULVDE3ZSPJ'
+#AWS_SECRET_ACCESS_KEY = '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'
+AWS_SECRET_ACCESS_KEY = 'Hz1cEAra+MUv34yqjR7BqeEjTbK2kZQ3IbKwf67I'
+AWS_DEFAULT_REGION = 'eu-central-1'
+AWS_BUCKET = 'trust-zone'
+AWS_UPLOAD_FOLDER = "secure_files/"
+UPLOAD_FOLDER = './uploads'
 
 application = Flask(__name__)
 application.config.from_object(__name__)
 api = Api(application)
 
-AWS_ACCESS_KEY_ID = 'AKIA3YBCFTUL3D4VTRXO'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_DEFAULT_REGION = 'eu-central-1'
-AWS_BUCKET = 'trust-zone'
-AWS_UPLOAD_FOLDER = "secure_files/"
-UPLOAD_FOLDER = './uploads'
+
 
 
 
