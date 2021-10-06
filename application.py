@@ -509,7 +509,7 @@ class UploadImageFile(Resource):
 
             return create_watermark(p_file, securename, p_watermake)
 
-"""
+
 # API Endpoints
 class UploadPdfFile(Resource):
     task_post = reqparse.RequestParser()
@@ -595,7 +595,7 @@ class UploadPdfFile(Resource):
                 status_code = 402
 
             return response, status_code
-"""
+
 
 class DownloadSecureFile(Resource):
     task_post_fk = reqparse.RequestParser()
@@ -757,6 +757,6 @@ api.add_resource(CreateBucket, '/createbucket')
 api.add_resource(DownloadSecureFile, '/getfile')
 api.add_resource(UploadVideoFile, '/uploadvideo')
 api.add_resource(UploadImageFile, '/uploadimage')
-# api.add_resource(UploadPdfFile, '/noworriuploadpdf')
+api.add_resource(UploadPdfFile, '/noworriuploadpdf')
 if __name__ == '__main__':
     application.run(host='0.0.0.0', port=8080)
