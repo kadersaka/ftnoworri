@@ -289,7 +289,7 @@ def text2image(text):
 def load_pdf(path):
     assert exists(path), "Your PDF file doesn't exist"
     return convert_from_path(path)
-"""
+ 
 def load_pdf2(filepath):
     assert exists(filepath), "Your PDF file doesn't exist"
     page_images = []
@@ -313,7 +313,7 @@ def mark_pdf_bytes(text, pdf_file, main_width, main_heigth):
     # remove(output)
     # remove(pdf_file)
     return out
-"""
+
 def create_watermark2(main, mark, main_size):
     print("starting...")
     # mask = mark.convert('L').point(lambda x: min(x, 25))
