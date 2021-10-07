@@ -19,7 +19,7 @@ from PIL import ImageDraw
 from PIL import ImageFont
 from PIL import ImageEnhance
 from pdf2image import convert_from_path, convert_from_bytes
-#from wand.image import Image as wimage
+from wand.image import Image as wimage
 from os.path import exists
 from PyPDF2 import PdfFileReader, PdfFileWriter
 
@@ -289,7 +289,7 @@ def text2image(text):
 def load_pdf(path):
     assert exists(path), "Your PDF file doesn't exist"
     return convert_from_path(path)
- 
+
 def load_pdf2(filepath):
     assert exists(filepath), "Your PDF file doesn't exist"
     page_images = []
